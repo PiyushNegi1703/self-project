@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Lobster&family=Ubuntu:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img.logo{
+    width: 10em;
+    height: 10em;
+}
+
+.nav-buttons{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.block{
+    display: block;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.nav-title{
+    align-items: center;
+    flex-direction: column;
+}
+
+#nav-title{
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    color: orange;
+    font-family: 'Lobster', cursive;
+    margin-top: 15px;
+}
+
+#eats{
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Lobster', cursive;
+    margin: 0%;
+}
+
+header{
+    background-color: black;
+    height: 160px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 25px;
+}
+
+a:hover{
+    color: orange;
+}
+
+.about{
+    flex-direction: column;
+}
+
+.about-container{
+    width: 60%;
+    margin: 300px auto 200px auto;
+    max-width: 2000px;
+    background-color: rgb(53, 53, 53);
+}
+
+.about-title{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    text-decoration: double underline 2px;
+    font-size: 5em;
+    margin-bottom: 40px;
+    color: orange;
+}
+
+.about-para{
+    color: white;
+    margin: 0 40px 40px 40px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#idli{
+    width: 36em;
+    top: 100px;
+    left: 1270px;
+}
+
+#paratha{
+    width: 32em;
+    top: 1000px;
+    left: -25px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+}
+
+#footer-nav{
+    display: inline-flex;
+    width: 30%;
+    position: absolute;
+    top: 1750px;
+    left: 300px;
+}
+
+.inline{
+    color: white;
+    font-size: 22px;
+    display: inline-flex;
+    position: absolute;
+    top: 1750px;
+    left: 865px;
+}
+
+.inline-policy{
+    padding-right: 7px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-logo{
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-logo{
+    display: flex;
+    width: 60%;
+}
+
+#instagram,#facebook,#youtube{
+    width: 1em;
+    height: 1em;
+    margin-right: 10px;
+}
+
+#social{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30em;
+    position: absolute;
+    top: 1815px;
+    left: 1420px;
+}
+
+#social>a:hover{
+    color: #ffa500;
+}
+
+.social{
+    text-decoration: underline 2px;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 1750px;
+    left: 1550px;
+}
+
+#footer-nav>p,pre{
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.number{
+    font-size: 20px;
+    position: absolute;
+    bottom: -70px;
+    right: -42px;
+    width: 100%;
+    line-height: 30px;
+}
+
+footer>a{
+    font-size: 25px;
+}
