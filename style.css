@@ -78,7 +78,7 @@ a{
     text-decoration: none;
     color: white;
     font-family: 'Alumni Sans Pinstripe', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 a:hover{
@@ -301,7 +301,7 @@ footer{
     justify-content: space-evenly;
     width: 30em;
     position: absolute;
-    top: 2940px;
+    top: 2960px;
     left: 1420px;
 }
 
@@ -314,21 +314,56 @@ footer{
     color: white;
     font-size: 35px;
     position: absolute;
-    top: 2860px;
+    top: 2885px;
     left: 1550px;
 }
 
 #footer-nav>p,pre{
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     margin: 0 10px;
 }
 
 .number{
     font-size: 20px;
     position: absolute;
-    bottom: -70px;
+    bottom: -95px;
     right: -42px;
     width: 100%;
     line-height: 30px;
+}
+
+.marquee{
+    --demo-marquee_duration: 9s;
+    --demo-marquee_gap: var(--demo-marquee_space);
+
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--demo-marquee_gap);
+}
+
+.marquee-group{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--demo-marquee_gap);
+    min-width: 100%;
+    animation: scroll var(--demo-marquee_duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-group {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-100%,0);
+    }
 }
